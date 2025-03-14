@@ -8,9 +8,7 @@ _logger = logging.getLogger(__name__)
 class ResPartner(models.Model):
     _inherit = "res.partner"
 
-    is_commercial_partner = fields.Boolean(
-        compute="_compute_is_commercial_partner", store=True, readonly=False
-    )
+    is_commercial_partner = fields.Boolean(compute="_compute_is_commercial_partner", store=True, readonly=False)
 
     @api.depends("is_company", "parent_id", "write_uid")
     def _compute_is_commercial_partner(self):
@@ -20,9 +18,7 @@ class ResPartner(models.Model):
             elif not partner.write_uid:
                 partner.is_commercial_partner = False
 
-    @api.depends(
-        "is_company", "parent_id.commercial_partner_id", "is_commercial_partner"
-    )
+    @api.depends("is_company", "parent_id.commercial_partner_id", "is_commercial_partner")
     def _compute_commercial_partner(self):
         super()._compute_commercial_partner()
         for partner in self:

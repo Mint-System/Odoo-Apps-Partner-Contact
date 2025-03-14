@@ -18,6 +18,7 @@ git clone git@github.com:mint-system/odoo-apps-partner-contact.git ./addons/part
 | [base_location_city](base_location_city) |         Location coordinates for cities. |
 | [partner_contact_association](partner_contact_association) |         Manage associtaions and assign contacts. |
 | [partner_contact_department_note](partner_contact_department_note) |         Set departments on contacts. |
+| [partner_contact_external_ref](partner_contact_external_ref) |         Add reference field for external communication. |
 | [partner_contact_location_in_name](partner_contact_location_in_name) |         Show zip and city in partner name. |
 | [partner_contact_user_acl](partner_contact_user_acl) |         Restricted access to contacts app. |
 | [partner_email_history](partner_email_history) |         Show history of emails sent and received to a partner. |

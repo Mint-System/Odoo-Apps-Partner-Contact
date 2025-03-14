@@ -11,7 +11,7 @@ class TestPartnerRefSequence(TransactionCase):
                 "name": "Partner test",
             }
         )
-        self.assertEquals(partner.ref, str(number).zfill(6))
+        self.assertEqual(partner.ref, str(number).zfill(6))
         sequence.number_next_actual *= 10
         number2 = sequence.number_next_actual
         partner = self.env["res.partner"].create(
@@ -19,5 +19,5 @@ class TestPartnerRefSequence(TransactionCase):
                 "name": "Partner test",
             }
         )
-        self.assertEquals(partner.ref, str(number2).zfill(6))
+        self.assertEqual(partner.ref, str(number2).zfill(6))
         sequence.number_next_actual = number + 1

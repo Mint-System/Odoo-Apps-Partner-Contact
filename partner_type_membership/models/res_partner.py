@@ -21,13 +21,10 @@ class ResPartner(models.Model):
 
     def _get_name(self):
         partner = self
-        name = super(ResPartner, self)._get_name()
+        name = super()._get_name()
         if partner.company_name or partner.parent_id:
             if not partner.name and partner.type in ["membership"]:
-                name += (
-                    " "
-                    + dict(self.fields_get(["type"])["type"]["selection"])[partner.type]
-                )
+                name += " " + dict(self.fields_get(["type"])["type"]["selection"])[partner.type]
         return name
 
     def _avatar_get_placeholder_path(self):

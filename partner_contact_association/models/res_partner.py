@@ -17,12 +17,10 @@ class Partner(models.Model):
     ]
 
     association_id = fields.Many2one("res.association")
-    association_name = fields.Char(
-        related="association_id.name", string="Assocation Name", store=True
-    )
+    association_name = fields.Char(related="association_id.name", string="Assocation Name", store=True)
 
     def _compute_display_name(self):
         super()._compute_display_name()
         for rec in self:
             if rec.association_id:
-                rec.display_name = "{} ({})".format(rec.name, rec.association_id.name)
+                rec.display_name = f"{rec.name} ({rec.association_id.name})"

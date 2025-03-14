@@ -12,7 +12,6 @@ class Partner(models.Model):
         """Append zip and city if context is given."""
         res = []
         if self.env.context.get("show_zip_and_city"):
-
             for partner in self:
                 name = partner.display_name
                 if partner.zip:
@@ -21,5 +20,5 @@ class Partner(models.Model):
                     name += " " + partner.city
                 res.append((partner.id, name))
         else:
-            res = super(Partner, self).name_get()
+            res = super().name_get()
         return res
