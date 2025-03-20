@@ -18,6 +18,25 @@
         </field>
     </record>
 
+    <record id="res_partner_kanban_view" model="ir.ui.view">
+        <field name="name">partner_contact_association.res_partner_kanban_view</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.res_partner_kanban_view" />
+        <field name="arch" type="xml">
+            <field name="parent_id" position="before">
+                <field name="association_id" />
+            </field>
+            <xpath
+                expr="//li[@t-if='record.parent_id.raw_value and !record.function.raw_value']"
+                position="before"
+            >
+                <li t-if="record.association_id.raw_value"><field
+                        name="association_id"
+                    /></li>
+            </xpath>
+        </field>
+    </record>
+
     <record id="contact_name" model="ir.ui.view">
         <field name="name">partner_contact_association.contact_name</field>
         <field name="inherit_id" ref="base.contact_name" />
