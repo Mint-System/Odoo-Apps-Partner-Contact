@@ -21,6 +21,8 @@ class Partner(models.Model):
             ("author_id", "ilike", self.email),
             "|",
             ("email_from", "ilike", self.email),
+            "|",
+            ("notified_partner_ids", "ilike", self.email),
             ("partner_ids", "ilike", self.email),
         ]
         return action
