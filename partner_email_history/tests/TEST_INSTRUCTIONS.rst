@@ -1,7 +1,7 @@
 Simple check:
 
 - Open the contact "Mitchel Admin"
-- Click "E-Mail History"
+- Click "Message History"
 - Check if message from Coleen Diaz is shown
 
 Advanced check:
