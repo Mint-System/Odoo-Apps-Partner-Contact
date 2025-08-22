@@ -13,5 +13,5 @@ git clone git@github.com:Mint-System/Odoo-Apps-partner_contact.git ./addons/part
 ## Available modules
 
 | Module | Summary |
-| ------ | ------- |
-|        |         |
+| --- | --- |
+| [base_location_city](base_location_city) |         Location coordinates for cities. |
