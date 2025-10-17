@@ -16,3 +16,4 @@ git clone git@github.com:Mint-System/Odoo-Apps-Partner-Contact.git ./addons/part
 | --- | --- |
 | [base_location_city](base_location_city) |         Location coordinates for cities. |
 | [partner_contact_user_acl](partner_contact_user_acl) |         Restricted access to contacts app. |
+| [partner_type_membership](partner_type_membership) |         Adds new partner type membership contact address. |
