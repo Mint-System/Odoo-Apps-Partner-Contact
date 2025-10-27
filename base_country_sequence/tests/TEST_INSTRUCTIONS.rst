@@ -1,0 +1,3 @@
+- Open country list
+- Drag and drop "Österreich"
+- Reload view and ensure the sequence persists
