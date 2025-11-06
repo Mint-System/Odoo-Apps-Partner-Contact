@@ -1,8 +1,9 @@
 [project]
 name = "odoo-apps-partner-contact"
-version = "17.0.20251106.0"
+version = "17.0.20251106.1"
 dependencies = [
     "odoo-addon-partner_contact_department_note>=17.0dev,<17.1dev",
+    "odoo-addon-partner_ref_sequence>=17.0dev,<17.1dev",
     "odoo-addon-partner_type_order>=17.0dev,<17.1dev",
     "odoo-addon-partner_type_sale>=17.0dev,<17.1dev",
 ]
