@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_partner_form" model="ir.ui.view">
+        <field name="name">partner_contact_association.view_partner_form</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='parent_id']/.." position="before">
+                <div class="o_row">
+                    <field
+                        name="association_id"
+                        placeholder="Association Name..."
+                        invisible="is_company"
+                    />
+                </div>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="res_partner_kanban_view" model="ir.ui.view">
+        <field name="name">partner_contact_association.res_partner_kanban_view</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.res_partner_kanban_view" />
+        <field name="arch" type="xml">
+            <field name="display_name" position="after">
+                <li t-if="record.association_id.raw_value">
+                    <field name="association_id" />
+                </li>
+            </field>
+        </field>
+    </record>
+
+    <record id="contact_name" model="ir.ui.view">
+        <field name="name">partner_contact_association.contact_name</field>
+        <field name="inherit_id" ref="base.contact_name" />
+        <field name="arch" type="xml">
+            <xpath expr="//t[@t-if='object.name']" position="before">
+                <t t-if="object.association_id">
+                    <span
+                        itemprop="addressAssocation"
+                        t-esc="object.association_id.name"
+                    />
+                    <br />
+                </t>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_res_partner_filter" model="ir.ui.view">
+        <field name="name">partner_contact_association.view_res_partner_filter</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_res_partner_filter" />
+        <field name="arch" type="xml">
+            <field name="name" position="attributes">
+                <attribute
+                    name="filter_domain"
+                >['|', '|', '|', '|', '|', ('display_name', 'ilike', self), ('ref', '=', self), ('email', 'ilike', self), ('vat', 'ilike', self), ('company_registry', 'ilike', self), ('association_name', 'ilike', self)]</attribute>
+            </field>
+
+            <field name="parent_id" position="after">
+                <field
+                    name="association_name"
+                    filter_domain="[('association_name', 'ilike', self)]"
+                />
+            </field>
+        </field>
+    </record>
+</odoo>

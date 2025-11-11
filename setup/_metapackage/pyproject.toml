@@ -1,0 +1,15 @@
+[project]
+name = "odoo-apps-partner-contact"
+version = "18.0.20251111.0"
+dependencies = [
+    "odoo-addon-base_country_sequence==18.0.*",
+    "odoo-addon-base_location_city==18.0.*",
+    "odoo-addon-partner_contact_association==18.0.*",
+    "odoo-addon-partner_contact_user_acl==18.0.*",
+    "odoo-addon-partner_type_membership==18.0.*",
+]
+classifiers=[
+    "Programming Language :: Python",
+    "Framework :: Odoo",
+    "Framework :: Odoo :: 18.0",
+]

@@ -1,0 +1,3 @@
+- Open the contacts app.
+- Search for "Joel Willis".
+- Check if association is visible.
