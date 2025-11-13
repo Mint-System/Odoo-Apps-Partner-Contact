@@ -1,0 +1,1 @@
+Option to set contact itself as commercial partner.

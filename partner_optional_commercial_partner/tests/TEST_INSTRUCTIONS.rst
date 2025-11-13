@@ -1,0 +1,7 @@
+- Install accountant module
+- Create a new invoice with contact "Azure Interior, Brandon Freeman"
+- Search the invoice in journal items and ensure "Azure Interior" is set as partner
+- Open Contact "Brandon Freeman" and enable "Is Commercial Partner"
+- Create another invoice for "Azure Interior, Brandon Freeman"
+- Open the journal items and search for the invoice
+- Ensure "Azure Interior, Brandon Freeman" is set as partner
