@@ -1,0 +1,4 @@
+- Open "Deco Addict" contact
+- Enter multiline text in street2 field
+- Generate report with adress field shown
+- Ensure the multiline text is shown
