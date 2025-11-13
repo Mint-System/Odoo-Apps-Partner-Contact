@@ -1,12 +1,13 @@
 [project]
 name = "odoo-apps-partner-contact"
-version = "18.0.20251113.0"
+version = "18.0.20251113.1"
 dependencies = [
     "odoo-addon-base_country_sequence==18.0.*",
     "odoo-addon-base_location_city==18.0.*",
     "odoo-addon-partner_contact_association==18.0.*",
     "odoo-addon-partner_contact_external_ref==18.0.*",
     "odoo-addon-partner_contact_user_acl==18.0.*",
+    "odoo-addon-partner_email_history==18.0.*",
     "odoo-addon-partner_type_membership==18.0.*",
 ]
 classifiers=[
