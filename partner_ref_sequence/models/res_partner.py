@@ -12,5 +12,5 @@ class ResPartner(models.Model):
     def create(self, vals_list):
         for vals in vals_list:
             vals["ref"] = self.env["ir.sequence"].next_by_code("res.partner.ref")
-        
+
         return super().create(vals_list)
