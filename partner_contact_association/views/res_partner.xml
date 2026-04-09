@@ -35,13 +35,13 @@
         <field name="inherit_id" ref="base.contact_name" />
         <field name="arch" type="xml">
             <xpath expr="//t[@t-if='object.name']" position="before">
-                <t t-if="object.association_id">
+                <!--  <t t-if="object.association_id">
                     <span
                         itemprop="addressAssocation"
                         t-esc="object.association_id.name"
                     />
                     <br />
-                </t>
+                </t> -->
             </xpath>
         </field>
     </record>

@@ -12,8 +12,8 @@ class Partner(models.Model):
     association_id = fields.Many2one("res.association")
     association_name = fields.Char(related="association_id.name", string="Assocation Name", store=True)
 
-    def _compute_display_name(self):
-        super()._compute_display_name()
-        for rec in self:
-            if rec.association_id:
-                rec.display_name = f"{rec.name} ({rec.association_id.name})"
+    def _get_complete_name(self):
+        name = super()._get_complete_name()
+        if self.association_id:
+            name = f"{self.name} ({self.association_id.name})"
+        return name
