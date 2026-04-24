@@ -11,6 +11,8 @@
     "depends": ["contacts"],
     "data": [
         "views/res_partner_views.xml",
+        "views/mail_message_views.xml",
+        "views/mail_mail_views.xml",
     ],
     "installable": True,
     "application": False,
