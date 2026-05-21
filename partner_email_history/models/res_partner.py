@@ -10,7 +10,7 @@ class Partner(models.Model):
 
     def action_show_message_history(self):
         self.ensure_one()
-        action = self.env.ref("mail.action_view_mail_message").read()[0]
+        action = self.env.ref("partner_email_history.action_view_mail_message_list").read()[0]
         subtype_id = self.env.ref("mail.mt_comment")
         message_type = "email"
 
@@ -32,7 +32,7 @@ class Partner(models.Model):
 
     def action_show_mail_history(self):
         self.ensure_one()
-        action = self.env.ref("mail.action_view_mail_mail").read()[0]
+        action = self.env.ref("partner_email_history.action_view_mail_mail_list").read()[0]
 
         action["domain"] = [
             "|",
