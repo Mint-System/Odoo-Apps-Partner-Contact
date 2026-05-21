@@ -1,0 +1,11 @@
+[project]
+name = "odoo-apps-partner-contact"
+version = "19.0.20260521.0"
+dependencies = [
+    "odoo-addon-partner_email_history==19.0.*",
+]
+classifiers=[
+    "Programming Language :: Python",
+    "Framework :: Odoo",
+    "Framework :: Odoo :: 19.0",
+]
