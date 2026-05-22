@@ -4,7 +4,7 @@ Simple check:
 - Click "Message History"
 - Check if message from "Coleen Diaz" is shown
 
-Advanced check:
+New contact:
 
 - Create a new contact "test"
 - Ensure that history button is not shown
@@ -12,6 +12,13 @@ Advanced check:
 - Send a message "ping"
 - Click the "Mail History" button
 - Ensure the sent mail is shown
+
+Add note:
+
+- Open the contact "Mitchel Admin"
+- Add note in chatter
+- Click "Message History"
+- Check if note is shown
 
 Notification check:
 

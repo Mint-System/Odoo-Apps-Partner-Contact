@@ -17,9 +17,18 @@
         <field name="arch" type="xml">
             <list>
                 <field name="date" />
+                <field name="subtype_id" string="Type" optional="hide" />
                 <field name="subject" />
                 <field name="author_id" />
+                <field
+                    name="notified_partner_ids"
+                    widget="many2many_tags"
+                    string="Recipients"
+                />
                 <field name="body" />
+                <button name="action_open_document" optional="show"
+                    type="object" class="oe_link" icon="fa-file-text-o"
+                    invisible="not model or res_id == 0" string="Open Document" />
             </list>
         </field>
     </record>

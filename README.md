@@ -14,4 +14,4 @@ git clone git@github.com:Mint-System/Odoo-Apps-Partner-Contact.git ./addons/part
 
 | Module | Summary |
 | --- | --- |
-| [partner_email_history](partner_email_history) |         Show history of emails sent and received to a partner. |
+| [partner_email_history](partner_email_history) |         Show history of messages sent and received to a partner. |

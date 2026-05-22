@@ -12,13 +12,13 @@ class Partner(models.Model):
         self.ensure_one()
         action = self.env.ref("partner_email_history.action_view_mail_message_list").read()[0]
         subtype_id = self.env.ref("mail.mt_comment")
-        message_type = "email"
+        message_types = ["email", "comment"]
 
         action["domain"] = [
             "&",
             "|",
             ("subtype_id", "=", subtype_id.id),
-            ("message_type", "=", message_type),
+            ("message_type", "in", message_types),
             "|",
             ("author_id", "=", self.id),
             "|",

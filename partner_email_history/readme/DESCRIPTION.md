@@ -1,1 +1,1 @@
-Show history of emails sent and received to a partner.
+Show history of messages sent and received to a partner.

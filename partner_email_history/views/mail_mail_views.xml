@@ -19,6 +19,7 @@
                 <field name="date" />
                 <field name="subject" />
                 <field name="author_id" string="User" />
+                <field name="recipient_ids" widget="many2many_tags" />
                 <field name="body" />
                 <field
                     name="state"

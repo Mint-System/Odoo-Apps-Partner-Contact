@@ -1,0 +1,57 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* partner_email_history
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-22 06:09+0000\n"
+"PO-Revision-Date: 2026-05-22 06:09+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: partner_email_history
+#: model:ir.model,name:partner_email_history.model_res_partner
+msgid "Contact"
+msgstr "Kontakt"
+
+#. module: partner_email_history
+#: model:ir.model.fields,field_description:partner_email_history.field_res_partner__display_name
+msgid "Display Name"
+msgstr "Anzeigename"
+
+#. module: partner_email_history
+#: model:ir.actions.act_window,name:partner_email_history.action_view_mail_mail_list
+#: model_terms:ir.ui.view,arch_db:partner_email_history.view_mail_list
+msgid "Emails"
+msgstr "E-Mails"
+
+#. module: partner_email_history
+#: model:ir.model.fields,field_description:partner_email_history.field_res_partner__id
+msgid "ID"
+msgstr "ID"
+
+#. module: partner_email_history
+#: model_terms:ir.ui.view,arch_db:partner_email_history.view_partner_form
+msgid "Mail History"
+msgstr "E-Mails"
+
+#. module: partner_email_history
+#: model_terms:ir.ui.view,arch_db:partner_email_history.view_partner_form
+msgid "Message History"
+msgstr "Nachrichten"
+
+#. module: partner_email_history
+#: model:ir.actions.act_window,name:partner_email_history.action_view_mail_message_list
+msgid "Messages"
+msgstr "Nachrichten"
+
+#. module: partner_email_history
+#: model_terms:ir.ui.view,arch_db:partner_email_history.view_mail_list
+msgid "User"
+msgstr "Benutzer"
