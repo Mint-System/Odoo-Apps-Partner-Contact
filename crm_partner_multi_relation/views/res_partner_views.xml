@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_partner_form" model="ir.ui.view">
+        <field name="name">crm_partner_multi_relation.view_partner_form</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form" />
+        <field name="arch" type="xml">
+            <page name="contact_addresses" position="after">
+                <page string="CRM Relations" name="relations">
+                    <group col="1">
+                        <field name="lead_relation_ids" nolabel="1">
+                            <list>
+                                <field name="type_id" />
+                                <field name="left_partner_id" />
+                                <field name="lead_ids" widget="many2many_tags" />
+                            </list>
+                            <form>
+                                <group>
+                                    <field name="type_id" />
+                                    <field name="left_partner_id" />
+                                    <field name="lead_ids">
+                                        <list>
+                                            <field name="name" />
+                                            <field name="partner_id" />
+                                            <field name="user_id" />
+                                            <field name="stage_id" />
+                                        </list>
+                                    </field>
+                                </group>
+                            </form>
+                        </field>
+                    </group>
+                </page>
+            </page>
+        </field>
+    </record>
+</odoo>

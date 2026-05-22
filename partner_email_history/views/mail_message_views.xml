@@ -26,9 +26,14 @@
                     string="Recipients"
                 />
                 <field name="body" />
-                <button name="action_open_document"
-                    type="object" class="oe_link" icon="fa-file-text-o"
-                    invisible="not model or res_id == 0" string="Open Document" />
+                <button
+                    name="action_open_document"
+                    type="object"
+                    class="oe_link"
+                    icon="fa-file-text-o"
+                    invisible="not model or res_id == 0"
+                    string="Open Document"
+                />
             </list>
         </field>
     </record>

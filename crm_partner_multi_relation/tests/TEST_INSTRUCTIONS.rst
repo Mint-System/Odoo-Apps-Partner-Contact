@@ -1,0 +1,4 @@
+- Open lead "Global Solutions: Furnitures"
+- Add relation "Is competitor of" with partner "Azure Interior"
+- Open "Azure Interior" and show tab "CRM Relations"
+- Ensure "Ready Mat" is shown as competitor

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="res_partner_relation_view_list_crm" model="ir.ui.view">
+        <field
+            name="name"
+        >crm_partner_multi_relation.res_partner_relation_view_list_crm</field>
+        <field name="model">res.partner.relation</field>
+        <field name="priority">50</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="type_id" string="Relation" />
+                <field name="right_partner_id" string="To Partner" />
+            </list>
+        </field>
+    </record>
+
+    <record id="crm_lead_view_form" model="ir.ui.view">
+        <field name="name">crm_partner_multi_relation.crm_lead_view_form</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.crm_lead_view_form" />
+        <field name="arch" type="xml">
+            <group name="lead_priority" position="after">
+                <group name="lead_relationship" invisible="not partner_id">
+                    <field
+                        name="relation_ids"
+                        nolabel="1"
+                        context="{'default_left_partner_id': partner_id}"
+                        domain="[('left_partner_id', '=', partner_id)]"
+                        views="[(ref('res_partner_relation_view_list_crm'), 'list')]"
+                    >
+                        <list>
+                            <field name="type_id" string="Relation" />
+                            <field name="right_partner_id" string="Partner" />
+                        </list>
+                        <form>
+                            <group>
+                                <field name="type_id" />
+                                <field name="right_partner_id" />
+                            </group>
+                        </form>
+                    </field>
+                </group>
+            </group>
+        </field>
+    </record>
+</odoo>
