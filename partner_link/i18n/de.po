@@ -1,0 +1,110 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* partner_link
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-26 12:04+0000\n"
+"PO-Revision-Date: 2026-05-26 12:04+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: partner_link
+#: model_terms:ir.ui.view,arch_db:partner_link.view_partner_form
+msgid "Backlinks"
+msgstr "Backlinks"
+
+#. module: partner_link
+#: model:ir.model,name:partner_link.model_res_partner
+#: model:ir.model.fields,field_description:partner_link.field_res_partner_link__partner_id
+#: model:ir.model.fields,field_description:partner_link.field_res_partner_link__source_partner_id
+msgid "Contact"
+msgstr "Kontakt"
+
+#. module: partner_link
+#: model_terms:ir.ui.view,arch_db:partner_link.view_partner_form
+msgid "Contacts"
+msgstr "Kontakte"
+
+#. module: partner_link
+#: model:ir.model.fields,field_description:partner_link.field_res_partner_link__create_uid
+#: model:ir.model.fields,field_description:partner_link.field_res_partner_link_label__create_uid
+msgid "Created by"
+msgstr "Erstellt von"
+
+#. module: partner_link
+#: model:ir.model.fields,field_description:partner_link.field_res_partner_link__create_date
+#: model:ir.model.fields,field_description:partner_link.field_res_partner_link_label__create_date
+msgid "Created on"
+msgstr "Erstellt am"
+
+#. module: partner_link
+#: model:ir.model.fields,field_description:partner_link.field_res_partner__display_name
+#: model:ir.model.fields,field_description:partner_link.field_res_partner_link__display_name
+#: model:ir.model.fields,field_description:partner_link.field_res_partner_link_label__display_name
+msgid "Display Name"
+msgstr "Anzeigename"
+
+#. module: partner_link
+#: model:ir.model.fields,field_description:partner_link.field_res_partner__id
+#: model:ir.model.fields,field_description:partner_link.field_res_partner_link__id
+#: model:ir.model.fields,field_description:partner_link.field_res_partner_link_label__id
+msgid "ID"
+msgstr "ID"
+
+#. module: partner_link
+#: model:ir.model.fields,field_description:partner_link.field_res_partner_link__label_id
+#: model:ir.model.fields,field_description:partner_link.field_res_partner_link_label__name
+msgid "Label"
+msgstr "Bezeichnung"
+
+#. module: partner_link
+#: model:ir.model.fields,field_description:partner_link.field_res_partner_link__write_uid
+#: model:ir.model.fields,field_description:partner_link.field_res_partner_link_label__write_uid
+msgid "Last Updated by"
+msgstr "Zuletzt aktualisiert von"
+
+#. module: partner_link
+#: model:ir.model.fields,field_description:partner_link.field_res_partner_link__write_date
+#: model:ir.model.fields,field_description:partner_link.field_res_partner_link_label__write_date
+msgid "Last Updated on"
+msgstr "Zuletzt aktualisiert am"
+
+#. module: partner_link
+#: model:ir.model.fields,field_description:partner_link.field_res_partner__link_ids
+#: model:ir.model.fields,field_description:partner_link.field_res_users__link_ids
+msgid "Link"
+msgstr "Link"
+
+#. module: partner_link
+#: model:ir.actions.act_window,name:partner_link.action_res_partner_link_label_view
+#: model:ir.ui.menu,name:partner_link.menu_res_partner_link_label
+msgid "Link Labels"
+msgstr "Link-Bezeichnungen"
+
+#. module: partner_link
+#: model:ir.model,name:partner_link.model_res_partner_link
+msgid "Partner Link"
+msgstr "Kontakt-Link"
+
+#. module: partner_link
+#: model:ir.model,name:partner_link.model_res_partner_link_label
+msgid "Partner Link Label"
+msgstr "Kontakt-Link-Bezeichung"
+
+#. module: partner_link
+#: model:ir.model.fields,field_description:partner_link.field_res_partner__source_partner_link_ids
+#: model:ir.model.fields,field_description:partner_link.field_res_users__source_partner_link_ids
+msgid "Source Partner Link"
+msgstr "Ursprung-Kontakt-Link"
+
+#. module: partner_link
+#: model_terms:ir.ui.view,arch_db:partner_link.view_partner_form
+msgid "This contact is linked by these contacts:"
+msgstr "Dieser Kontakt wird von diesen Kontakten verknüpft:"

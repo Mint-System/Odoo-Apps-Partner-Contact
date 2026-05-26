@@ -1,0 +1,71 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* calendar_partner_link
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-26 12:08+0000\n"
+"PO-Revision-Date: 2026-05-26 12:08+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: calendar_partner_link
+#: model:ir.model,name:calendar_partner_link.model_calendar_event
+msgid "Calendar Event"
+msgstr "Kalenderereignis"
+
+#. module: calendar_partner_link
+#: model:ir.model,name:calendar_partner_link.model_res_partner
+msgid "Contact"
+msgstr "Kontakt"
+
+#. module: calendar_partner_link
+#: model:ir.model.fields,field_description:calendar_partner_link.field_calendar_event__display_name
+#: model:ir.model.fields,field_description:calendar_partner_link.field_res_partner__display_name
+#: model:ir.model.fields,field_description:calendar_partner_link.field_res_partner_link__display_name
+msgid "Display Name"
+msgstr "Anzeigename"
+
+#. module: calendar_partner_link
+#: model:ir.model.fields,field_description:calendar_partner_link.field_res_partner_link__source_event_id
+msgid "Event"
+msgstr "Event"
+
+#. module: calendar_partner_link
+#: model_terms:ir.ui.view,arch_db:calendar_partner_link.view_partner_form
+msgid "Events"
+msgstr "Events"
+
+#. module: calendar_partner_link
+#: model:ir.model.fields,field_description:calendar_partner_link.field_calendar_event__id
+#: model:ir.model.fields,field_description:calendar_partner_link.field_res_partner__id
+#: model:ir.model.fields,field_description:calendar_partner_link.field_res_partner_link__id
+msgid "ID"
+msgstr "ID"
+
+#. module: calendar_partner_link
+#: model:ir.model.fields,field_description:calendar_partner_link.field_calendar_event__link_ids
+msgid "Link"
+msgstr "Link"
+
+#. module: calendar_partner_link
+#: model:ir.model,name:calendar_partner_link.model_res_partner_link
+msgid "Partner Link"
+msgstr "Kontakt-Link"
+
+#. module: calendar_partner_link
+#: model:ir.model.fields,field_description:calendar_partner_link.field_res_partner__source_event_link_ids
+#: model:ir.model.fields,field_description:calendar_partner_link.field_res_users__source_event_link_ids
+msgid "Source Event Link"
+msgstr "Ursprung-Event-Link"
+
+#. module: calendar_partner_link
+#: model_terms:ir.ui.view,arch_db:calendar_partner_link.view_partner_form
+msgid "This contact is linked by these events:"
+msgstr "Dieser Kontakt ist mit folgenden Events verknüpft:"
