@@ -8,6 +8,6 @@ _logger = logging.getLogger(__name__)
 
 
 class ResPartner(models.Model):
-    _inherit = "res.partner.link"
+    _inherit = "res.partner"
 
-    source_lead_id = fields.Many2one("crm.lead", string="Opportunity")
+    source_event_link_ids = fields.One2many("res.partner.link", "partner_id", domain=[("source_event_id", "!=", False)])

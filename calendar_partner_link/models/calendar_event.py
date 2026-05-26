@@ -7,7 +7,7 @@ from odoo import fields, models
 _logger = logging.getLogger(__name__)
 
 
-class ResPartner(models.Model):
-    _inherit = "res.partner.link"
+class CalendarEvent(models.Model):
+    _inherit = "calendar.event"
 
-    source_lead_id = fields.Many2one("crm.lead", string="Opportunity")
+    link_ids = fields.One2many("res.partner.link", "source_event_id")

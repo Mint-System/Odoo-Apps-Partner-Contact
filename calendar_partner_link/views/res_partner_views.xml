@@ -6,12 +6,12 @@
         <field name="inherit_id" ref="partner_link.view_partner_form" />
         <field name="arch" type="xml">
             <group name="group_source_partner_links" position="after">
-                <group string="Opportunities" name="group_source_lead_links">
-                    <p colspan="2">This contact is linked by these opportunities:</p>
-                    <field name="source_lead_link_ids" nolabel="1" colspan="2">
+                <group string="Events" name="group_source_event_links">
+                    <p colspan="2">This contact is linked by these events:</p>
+                    <field name="source_event_link_ids" nolabel="1" colspan="2">
                         <list editable="bottom" create="false" delete="false">
                             <field name="label_id" />
-                            <field name="source_lead_id" />
+                            <field name="source_event_id" />
                         </list>
                     </field>
                 </group>

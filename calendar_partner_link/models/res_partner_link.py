@@ -10,4 +10,4 @@ _logger = logging.getLogger(__name__)
 class ResPartner(models.Model):
     _inherit = "res.partner.link"
 
-    source_lead_id = fields.Many2one("crm.lead", string="Opportunity")
+    source_event_id = fields.Many2one("calendar.event", string="Event")
