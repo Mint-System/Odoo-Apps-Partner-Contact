@@ -7,25 +7,33 @@
         <field name="arch" type="xml">
             <notebook position="before">
                 <group>
-                    <field name="link_ids" nolabel="1" context="{'default_partner_id': False}">
-                        <list editable="top">
-                            <field name="label_id" />
-                            <field name="partner_id" />
-                        </list>
-                    </field>
+                    <group>
+                        <field name="link_ids" nolabel="1">
+                            <list editable="bottom">
+                                <field name="label_id" />
+                                <field name="partner_id" />
+                            </list>
+                        </field>
+                    </group>
                 </group>
             </notebook>
 
             <page name="contact_addresses" position="after">
                 <page string="Backlinks" name="backlinks">
-                    <group string="Contacts" name="group_source_partner_links">
-                        <p colspan="2">This contact is linked by these contacts:</p>
-                        <field name="source_partner_link_ids" nolabel="1" colspan="2">
-                            <list editable="top">
-                                <field name="label_id" />
-                                <field name="source_partner_id" />
-                            </list>
-                        </field>
+                    <group>
+                        <group string="Contacts" name="group_source_partner_links">
+                            <p colspan="2">This contact is linked by these contacts:</p>
+                            <field
+                                name="source_partner_link_ids"
+                                nolabel="1"
+                                colspan="2"
+                            >
+                                <list editable="bottom" create="false" delete="false">
+                                    <field name="label_id" />
+                                    <field name="source_partner_id" />
+                                </list>
+                            </field>
+                        </group>
                     </group>
                 </page>
             </page>

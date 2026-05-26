@@ -1,0 +1,4 @@
+- Open lead "Global Solutions: Furnitures"
+- Add a link with label "Purchaser" and partner "Billy Fox"
+- Open contact "Billy Fox" and show tab "Backlinks"
+- Ensure the lead is listed

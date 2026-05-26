@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_partner_form" model="ir.ui.view">
+        <field name="name">crm_partner_link.view_partner_form</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="partner_link.view_partner_form" />
+        <field name="arch" type="xml">
+            <group name="group_source_partner_links" position="after">
+                <group string="Leads" name="group_source_lead_links">
+                    <p colspan="2">This contact is linked by these leads:</p>
+                    <field name="source_lead_link_ids" nolabel="1" colspan="2">
+                        <list editable="bottom" create="false" delete="false">
+                            <field name="label_id" />
+                            <field name="source_lead_id" />
+                        </list>
+                    </field>
+                </group>
+            </group>
+        </field>
+    </record>
+</odoo>
