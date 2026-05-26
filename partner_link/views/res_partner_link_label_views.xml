@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="res_partner_link_label_list_view" model="ir.ui.view">
+        <field name="name">partner_link.res_partner_link_label_list_view</field>
+        <field name="model">res.partner.link.label</field>
+        <field name="arch" type="xml">
+            <list editable="bottom">
+                <field name="name" />
+            </list>
+        </field>
+    </record>
+
+    <record id="res_partner_link_label_search_view" model="ir.ui.view">
+        <field name="name">partner_link.res_partner_link_label_search_view</field>
+        <field name="model">res.partner.link.label</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name" />
+            </search>
+        </field>
+    </record>
+
+    <record id="action_res_partner_link_label_view" model="ir.actions.act_window">
+        <field name="name">Link Labels</field>
+        <field name="res_model">res.partner.link.label</field>
+        <field name="view_mode">list</field>
+        <field name="search_view_id" ref="res_partner_link_label_search_view" />
+    </record>
+
+    <menuitem
+        id="partner_link.menu_res_partner_link_label"
+        name="Link Labels"
+        parent="contacts.res_partner_menu_config"
+        action="partner_link.action_res_partner_link_label_view"
+        sequence="3"
+    />
+</odoo>

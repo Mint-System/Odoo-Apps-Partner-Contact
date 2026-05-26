@@ -1,0 +1,4 @@
+- Open contact "Acme Corporation"
+- Add link with label "Decision Maker" with Partner "Addison Olson"
+- Open contact "Addison Olson" and show tab "Backlinks"
+- Ensure "Acme Corporation" is listed
