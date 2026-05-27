@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 19.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-26 12:08+0000\n"
-"PO-Revision-Date: 2026-05-26 12:08+0000\n"
+"POT-Creation-Date: 2026-05-27 09:38+0000\n"
+"PO-Revision-Date: 2026-05-27 09:38+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -35,12 +35,12 @@ msgstr "Anzeigename"
 #. module: calendar_partner_link
 #: model:ir.model.fields,field_description:calendar_partner_link.field_res_partner_link__source_event_id
 msgid "Event"
-msgstr "Event"
+msgstr "Ereignis"
 
 #. module: calendar_partner_link
 #: model_terms:ir.ui.view,arch_db:calendar_partner_link.view_partner_form
 msgid "Events"
-msgstr "Events"
+msgstr "Ereignisse"
 
 #. module: calendar_partner_link
 #: model:ir.model.fields,field_description:calendar_partner_link.field_calendar_event__id
@@ -64,8 +64,3 @@ msgstr "Kontakt-Link"
 #: model:ir.model.fields,field_description:calendar_partner_link.field_res_users__source_event_link_ids
 msgid "Source Event Link"
 msgstr "Ursprung-Event-Link"
-
-#. module: calendar_partner_link
-#: model_terms:ir.ui.view,arch_db:calendar_partner_link.view_partner_form
-msgid "This contact is linked by these events:"
-msgstr "Dieser Kontakt ist mit folgenden Events verknüpft:"
