@@ -1,0 +1,4 @@
+- Open opportunity "Global Solutions: Furnitures" and show tab "Links"
+- Add link to "Open Space Design"
+- Open opportunity "Open Space Design" and dhow tab "Backlinks"
+- Ensure the lead is linked
