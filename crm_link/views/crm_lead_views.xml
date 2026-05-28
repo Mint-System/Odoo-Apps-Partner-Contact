@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="crm_lead_view_form" model="ir.ui.view">
+        <field name="name">crm_partner_link.crm_lead_view_form</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.crm_lead_view_form" />
+        <field name="arch" type="xml">
+            <page name="internal_notes" position="after">
+                <page string="Links" name="lead_links">
+                    <group colspan="2" name="group_lead_links">
+                        <field name="lead_link_ids" nolabel="1">
+                            <list editable="bottom">
+                                <field name="label_id" />
+                                <field name="lead_id" />
+                                <field name="comment" />
+                            </list>
+                        </field>
+                    </group>
+                </page>
+                <page string="Backlinks" name="backlinks">
+                    <p
+                        colspan="2"
+                    >This opportunity is linked by the following documents:</p>
+                    <group
+                        string="Opportunities"
+                        name="group_source_lead_links"
+                        invisible="not source_lead_link_ids"
+                    >
+                        <field name="source_lead_link_ids" nolabel="1" colspan="2">
+                            <list editable="bottom" create="false" delete="false">
+                                <field name="label_id" />
+                                <field name="source_lead_id" />
+                                <field name="comment" />
+                            </list>
+                        </field>
+                    </group>
+                </page>
+            </page>
+        </field>
+    </record>
+</odoo>

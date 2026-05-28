@@ -12,7 +12,7 @@ class ResPartnerLink(models.Model):
     _description = "Partner Link"
 
     label_id = fields.Many2one("res.partner.link.label", help="Label for the link.")
-    partner_id = fields.Many2one("res.partner", string="Contact", help="Link points to this partner.")
+    partner_id = fields.Many2one("res.partner", string="Contact", required=True, help="Link points to this partner.")
     comment = fields.Char(help="Optional comment for the link.")
 
     source_partner_id = fields.Many2one("res.partner", string="Contact", help="The link originates from this partner.")

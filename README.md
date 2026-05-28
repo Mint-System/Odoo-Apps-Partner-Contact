@@ -15,6 +15,7 @@ git clone git@github.com:Mint-System/Odoo-Apps-Partner-Contact.git ./addons/part
 | Module | Summary |
 | --- | --- |
 | [calendar_partner_link](calendar_partner_link) |         Add contact links to events. |
+| [crm_link](crm_link) |         Add lead links to lead. |
 | [crm_partner_link](crm_partner_link) |         Add contact links to leads. |
 | [crm_partner_multi_relation](crm_partner_multi_relation) |         Add relations to CRM leads and opportunities. |
 | [partner_email_history](partner_email_history) |         Show history of messages sent and received to a partner. |
