@@ -10,4 +10,4 @@ _logger = logging.getLogger(__name__)
 class CalendarEvent(models.Model):
     _inherit = "calendar.event"
 
-    link_ids = fields.One2many("res.partner.link", "source_event_id")
+    link_ids = fields.One2many("res.partner.link", "source_event_id", help="Link partners.")

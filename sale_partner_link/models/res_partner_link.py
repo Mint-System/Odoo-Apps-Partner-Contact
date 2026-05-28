@@ -10,4 +10,6 @@ _logger = logging.getLogger(__name__)
 class ResPartner(models.Model):
     _inherit = "res.partner.link"
 
-    source_sale_order_id = fields.Many2one("sale.order", string="Sale Order")
+    source_sale_order_id = fields.Many2one(
+        "sale.order", string="Sale Order", help="Link originates from this sale order."
+    )

@@ -10,4 +10,6 @@ _logger = logging.getLogger(__name__)
 class ResPartner(models.Model):
     _inherit = "res.partner"
 
-    source_lead_link_ids = fields.One2many("res.partner.link", "partner_id", domain=[("source_lead_id", "!=", False)])
+    source_lead_link_ids = fields.One2many(
+        "res.partner.link", "partner_id", domain=[("source_lead_id", "!=", False)], help="Backlinks from opportunities."
+    )

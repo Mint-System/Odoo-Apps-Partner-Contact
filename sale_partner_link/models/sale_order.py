@@ -10,4 +10,4 @@ _logger = logging.getLogger(__name__)
 class SaleOrder(models.Model):
     _inherit = "sale.order"
 
-    link_ids = fields.One2many("res.partner.link", "source_sale_order_id")
+    link_ids = fields.One2many("res.partner.link", "source_sale_order_id", help="Link partners.")

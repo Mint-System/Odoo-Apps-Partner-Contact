@@ -11,5 +11,8 @@ class ResPartner(models.Model):
     _inherit = "res.partner"
 
     source_sale_order_link_ids = fields.One2many(
-        "res.partner.link", "partner_id", domain=[("source_sale_order_id", "!=", False)]
+        "res.partner.link",
+        "partner_id",
+        domain=[("source_sale_order_id", "!=", False)],
+        help="Backlinks from sale orders.",
     )

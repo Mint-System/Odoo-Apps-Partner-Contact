@@ -10,4 +10,4 @@ _logger = logging.getLogger(__name__)
 class ResPartner(models.Model):
     _inherit = "res.partner.link"
 
-    source_event_id = fields.Many2one("calendar.event", string="Event")
+    source_event_id = fields.Many2one("calendar.event", string="Event", help="Link originates from this event.")
