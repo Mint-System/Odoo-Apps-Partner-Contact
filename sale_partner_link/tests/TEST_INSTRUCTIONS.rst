@@ -1,0 +1,4 @@
+- Open sale order "S00023"
+- Add a link with label "Owner" and partner "Tom Ruiz"
+- Open contact "Tom Ruiz" and show tab "Backlinks"
+- Ensure the sale order is listed
