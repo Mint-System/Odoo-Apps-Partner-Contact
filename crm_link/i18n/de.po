@@ -18,12 +18,12 @@ msgstr ""
 #. module: crm_link
 #: model_terms:ir.ui.view,arch_db:crm_link.crm_lead_view_form
 msgid "Backlinks"
-msgstr "Rückverweise"
+msgstr "Backlinks"
 
 #. module: crm_link
 #: model:ir.model.fields,help:crm_link.field_crm_lead__source_lead_link_ids
 msgid "Backlinks from opportunities."
-msgstr "Rückverweise von Chancen."
+msgstr "Backlinks von Chancen."
 
 #. module: crm_link
 #: model:ir.model.fields,field_description:crm_link.field_crm_lead_link__comment

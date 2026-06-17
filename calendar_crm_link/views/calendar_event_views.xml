@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_calendar_event_form" model="ir.ui.view">
+        <field name="name">crm_crm_link.view_calendar_event_form</field>
+        <field name="model">calendar.event</field>
+        <field name="inherit_id" ref="calendar.view_calendar_event_form" />
+        <field name="arch" type="xml">
+            <page name="options" position="after">
+                <page string="Links" name="lead_links">
+                    <group colspan="2" name="group_lead_links">
+                        <field name="lead_link_ids" nolabel="1">
+                            <list editable="bottom">
+                                <field name="label_id" />
+                                <field name="lead_id" />
+                                <field name="comment" />
+                            </list>
+                        </field>
+                    </group>
+                </page>
+            </page>
+        </field>
+    </record>
+</odoo>

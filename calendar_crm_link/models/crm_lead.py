@@ -7,9 +7,9 @@ from odoo import fields, models
 _logger = logging.getLogger(__name__)
 
 
-class ResPartner(models.Model):
-    _inherit = "res.partner"
+class CRMLead(models.Model):
+    _inherit = "crm.lead"
 
     source_event_link_ids = fields.One2many(
-        "res.partner.link", "partner_id", domain=[("source_event_id", "!=", False)], help="Backlinks from events."
+        "crm.lead.link", "lead_id", domain=[("source_event_id", "!=", False)], help="Backlinks from events."
     )

@@ -1,0 +1,5 @@
+- Open calendar and create an event
+- Show full view and open tab "Links"
+- Add link to lead "Interest in your products"
+- Open the lead and show tab "Backlinks"
+- Ensure event is shown

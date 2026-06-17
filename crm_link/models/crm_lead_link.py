@@ -15,7 +15,9 @@ class CRMLeadLink(models.Model):
     lead_id = fields.Many2one("crm.lead", string="Opportunity", required=True, help="Link points to this opportunity.")
     comment = fields.Char(help="Optional comment for the link.")
 
-    source_lead_id = fields.Many2one("crm.lead", string="Contact", help="The link originates from this opportunity.")
+    source_lead_id = fields.Many2one(
+        "crm.lead", string="Opportunity", help="The link originates from this opportunity."
+    )
 
     def _compute_display_name(self):
         for rec in self:

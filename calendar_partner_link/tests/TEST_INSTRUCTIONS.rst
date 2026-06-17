@@ -1,3 +1,3 @@
-- Open calendar and create event
+- Open calendar and create an event
 - Add link with label "Attended" and partner "Marc Demo"
 - Open contact "Marc Demo" and show tab "Backlinks"

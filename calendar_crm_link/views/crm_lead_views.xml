@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="crm_lead_view_form" model="ir.ui.view">
+        <field name="name">crm_event_link.crm_lead_view_form</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.crm_lead_view_form" />
+        <field name="arch" type="xml">
+            <group name="group_source_lead_links" position="after">
+                <group
+                    string="Events"
+                    name="group_source_event_links"
+                    invisible="not source_event_link_ids"
+                >
+                    <field name="source_event_link_ids" nolabel="1" colspan="2">
+                        <list editable="bottom" create="false" delete="false">
+                            <field name="label_id" />
+                            <field name="source_event_id" />
+                            <field name="comment" />
+                        </list>
+                    </field>
+                </group>
+            </group>
+        </field>
+    </record>
+</odoo>
