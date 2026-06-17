@@ -1,0 +1,85 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* calendar_crm_link
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-17 06:58+0000\n"
+"PO-Revision-Date: 2026-06-17 06:58+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: calendar_crm_link
+#: model:ir.model.fields,help:calendar_crm_link.field_crm_lead__source_event_link_ids
+msgid "Backlinks from events."
+msgstr "Backlinks von Events."
+
+#. module: calendar_crm_link
+#: model:ir.model,name:calendar_crm_link.model_calendar_event
+msgid "Calendar Event"
+msgstr "Kalender-Event"
+
+#. module: calendar_crm_link
+#: model:ir.model.fields,field_description:calendar_crm_link.field_calendar_event__display_name
+#: model:ir.model.fields,field_description:calendar_crm_link.field_crm_lead__display_name
+#: model:ir.model.fields,field_description:calendar_crm_link.field_crm_lead_link__display_name
+msgid "Display Name"
+msgstr "Anzeigename"
+
+#. module: calendar_crm_link
+#: model:ir.model.fields,field_description:calendar_crm_link.field_crm_lead_link__source_event_id
+msgid "Event"
+msgstr "Event"
+
+#. module: calendar_crm_link
+#: model_terms:ir.ui.view,arch_db:calendar_crm_link.crm_lead_view_form
+msgid "Events"
+msgstr "Event"
+
+#. module: calendar_crm_link
+#: model:ir.model.fields,field_description:calendar_crm_link.field_calendar_event__id
+#: model:ir.model.fields,field_description:calendar_crm_link.field_crm_lead__id
+#: model:ir.model.fields,field_description:calendar_crm_link.field_crm_lead_link__id
+msgid "ID"
+msgstr "ID"
+
+#. module: calendar_crm_link
+#: model:ir.model,name:calendar_crm_link.model_crm_lead
+msgid "Lead"
+msgstr "Lead"
+
+#. module: calendar_crm_link
+#: model:ir.model.fields,field_description:calendar_crm_link.field_calendar_event__lead_link_ids
+msgid "Lead Link"
+msgstr "Lead-Link"
+
+#. module: calendar_crm_link
+#: model:ir.model.fields,help:calendar_crm_link.field_calendar_event__lead_link_ids
+msgid "Link opportunities."
+msgstr "Chancen verknüpfen."
+
+#. module: calendar_crm_link
+#: model:ir.model.fields,help:calendar_crm_link.field_crm_lead_link__source_event_id
+msgid "Link originates from this event."
+msgstr "Der Link stammt von diesem Event."
+
+#. module: calendar_crm_link
+#: model_terms:ir.ui.view,arch_db:calendar_crm_link.view_calendar_event_form
+msgid "Links"
+msgstr "Links"
+
+#. module: calendar_crm_link
+#: model:ir.model,name:calendar_crm_link.model_crm_lead_link
+msgid "Opportunity Link"
+msgstr "Chancen-Link"
+
+#. module: calendar_crm_link
+#: model:ir.model.fields,field_description:calendar_crm_link.field_crm_lead__source_event_link_ids
+msgid "Source Event Link"
+msgstr "Ursprung-Event-Link"

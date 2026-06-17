@@ -120,7 +120,7 @@ msgstr "Optionaler Kommentar für den Link."
 #. module: crm_link
 #: model:ir.model.fields,field_description:crm_link.field_crm_lead__source_lead_link_ids
 msgid "Source Lead Link"
-msgstr "Quell-Lead-Link"
+msgstr "Ursprung-Lead-Link"
 
 #. module: crm_link
 #: model:ir.model.fields,help:crm_link.field_crm_lead_link__source_lead_id
