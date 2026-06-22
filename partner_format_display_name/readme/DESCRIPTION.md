@@ -1,0 +1,1 @@
+Change format of partner display name.

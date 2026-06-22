@@ -1,0 +1,3 @@
+- Install the Module.
+- Create partner with company as parent.
+- In contacts list view partners are formatted like "Partner (Company)".
