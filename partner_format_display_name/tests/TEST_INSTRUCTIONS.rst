@@ -1,3 +1,4 @@
 - Install the Module.
 - Create partner with company as parent.
 - In contacts list view partners are formatted like "Partner (Company)".
+- To update existing contacts run server action "Recompute Partner Complete Name".
