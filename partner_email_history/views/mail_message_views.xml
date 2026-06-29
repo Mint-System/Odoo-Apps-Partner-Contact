@@ -25,7 +25,9 @@
                     widget="many2many_tags"
                     string="Recipients"
                 />
-                <field name="body" />
+                <field name="body" class="o_field_truncate" />
+                <field name="model" string="Model"/>
+                <field name="record_name" string="Document"/>
                 <button
                     name="action_open_document"
                     type="object"

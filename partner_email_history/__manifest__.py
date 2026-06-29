@@ -14,6 +14,11 @@
         "views/mail_message_views.xml",
         "views/mail_mail_views.xml",
     ],
+    'assets': {
+        'web.assets_backend': [
+            'partner_email_history/static/src/css/field_truncate.css',
+        ],
+    },
     "installable": True,
     "application": False,
     "auto_install": False,
