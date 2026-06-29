@@ -20,9 +20,9 @@
                 <field name="subject" />
                 <field name="author_id" string="User" />
                 <field name="recipient_ids" widget="many2many_tags" />
-                <field name="body" class="o_field_truncate"/>
-                <field name="model" string="Model"/>
-                <field name="record_name" string="Document"/>
+                <field name="body" class="o_field_truncate" />
+                <field name="model" string="Model" />
+                <field name="record_name" string="Document" />
                 <field
                     name="state"
                     widget="badge"
