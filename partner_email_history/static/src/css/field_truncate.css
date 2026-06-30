@@ -4,3 +4,17 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+
+.o_list_view th[data-name="body"],
+.o_list_view td.o_field_cell[name="body"] {
+    max-width: 300px;
+    width: 300px;
+    overflow: hidden;
+}
+
+.o_list_view td.o_field_cell[name="body"] > div:first-child {
+    max-height: 75px;
+    overflow: hidden;
+    display: block;
+}
