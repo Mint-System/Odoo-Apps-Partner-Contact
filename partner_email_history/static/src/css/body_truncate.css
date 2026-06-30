@@ -1,0 +1,7 @@
+
+.o_list_view td.o_field_cell[name="body_short"] {
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

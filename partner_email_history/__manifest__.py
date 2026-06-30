@@ -16,7 +16,7 @@
     ],
     "assets": {
         "web.assets_backend": [
-            "partner_email_history/static/src/css/field_truncate.css",
+            "partner_email_history/static/src/css/body_truncate.css",
         ],
     },
     "installable": True,
