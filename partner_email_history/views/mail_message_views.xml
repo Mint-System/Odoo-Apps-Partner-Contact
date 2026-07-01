@@ -15,7 +15,7 @@
         <field name="name">partner_email_history.view_message_list</field>
         <field name="model">mail.message</field>
         <field name="arch" type="xml">
-            <list>
+            <list default_order="date desc">
                 <field name="date" />
                 <field name="subtype_id" string="Type" optional="hide" />
                 <field name="subject" />
