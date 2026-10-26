@@ -12,7 +12,7 @@ class Partner(models.Model):
         self.ensure_one()
         action = self.env.ref("partner_email_history.action_view_mail_message_list").read()[0]
         subtype_id = self.env.ref("mail.mt_comment")
-        message_types = ["email", "comment"]
+        message_types = ["email", "comment", "email_outgoing"]
 
         action["domain"] = [
             "&",
@@ -23,6 +23,8 @@ class Partner(models.Model):
             ("author_id", "=", self.id),
             "|",
             ("email_from", "ilike", self.email),
+            "|",
+            ("incoming_email_to", "ilike", f"%{self.email}%"),
             "&",
             ("model", "=", "res.partner"),
             ("res_id", "=", self.id),
