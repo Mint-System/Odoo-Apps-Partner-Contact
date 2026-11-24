@@ -1,18 +1,17 @@
 # Odoo Apps: Partner Contact
 
-Collection of partner model related modules.
+Odoo modules extending the `partner` module.
 
 ## Usage
 
-Clone module into Odoo addon directory.
+Clone this repo into the Odoo addons directory.
 
 ```bash
-git clone git@github.com:mint-system/odoo-apps-partner-contact.git ./addons/partner_contact
+git clone git@github.com:Mint-System/Odoo-Apps-Partner-Contact.git ./addons/partner_contact
 ```
 
 ## Available modules
 
 | Module | Summary |
-| --- | --- |
-| [partner_type_order](partner_type_order) |         Adds new partner type order address. |
-| [partner_type_sale](partner_type_sale) |         Adds new partner type sale contact address. |
+| ------ | ------- |
+|        |         |
