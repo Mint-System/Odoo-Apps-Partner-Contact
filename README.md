@@ -13,12 +13,5 @@ git clone git@github.com:Mint-System/Odoo-Apps-Partner-Contact.git ./addons/part
 ## Available modules
 
 | Module | Summary |
-| --- | --- |
-| [base_country_sequence](base_country_sequence) |         Add sequence field to country list. |
-| [base_location_city](base_location_city) |         Location coordinates for cities. |
-| [partner_contact_association](partner_contact_association) |         Manage associtaions and assign contacts. |
-| [partner_contact_external_ref](partner_contact_external_ref) |         Add reference field for external communication. |
-| [partner_contact_user_acl](partner_contact_user_acl) |         Restricted access to contacts app. |
-| [partner_email_history](partner_email_history) |         Show history of emails sent and received to a partner. |
-| [partner_multiline_street2](partner_multiline_street2) |         Enable multiline text for secondary street. |
-| [partner_type_membership](partner_type_membership) |         Adds new partner type membership contact address. |
+| ------ | ------- |
+|        |         |
